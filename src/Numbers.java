@@ -1,13 +1,12 @@
 
-public class FizzBuzzCommand {
+public class Numbers {
 
-	private int number1;
-	private int number2;
+	private final int number1;
+	private final int number2;
 	private OperationType calculationWanted;
 
-	public FizzBuzzCommand(int divisibleBy, OperationType operationType) {
+	public Numbers(int number1, int number2, OperationType calculationWanted) {
 		this.number1 = number1;
-		// TODO Auto-generated constructor stub
 		this.number2 = number2;
 		this.calculationWanted = calculationWanted;
 	}
