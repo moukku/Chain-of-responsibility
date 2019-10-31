@@ -5,5 +5,10 @@ This makes it simpler for everyone to understand and use these patterns during w
 # Chain-of-responsibility
 In object-oriented design, the chain-of-responsibility pattern is a design pattern consisting of a source of command objects and a series of processing objects.[1] Each processing object contains logic that defines the types of command objects that it can handle; the rest are passed to the next processing object in the chain. A mechanism also exists for adding new processing objects to the end of this chain. Thus, the chain of responsibility is an object oriented version of the if ... else if ... else if ....... else ... endif idiom, with the benefit that the condition–action blocks can be dynamically rearranged and reconfigured at runtime. 
 
+# Decorator
+Decorator attaches new responsibility to a class dynamically. It is alteranative way to extend functionality instead of subclassing.
+Decorator adds functionality to object without affects on other objects. Functinality can be taken off afterwards by use of decorator.
+You can add additional state with decorator.
+
 # Strategy
 In computer programming, the strategy pattern (also known as the policy pattern) is a behavioral software design pattern that enables selecting an algorithm at runtime. Instead of implementing a single algorithm directly, code receives run-time instructions as to which in a family of algorithms to use.
