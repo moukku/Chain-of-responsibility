@@ -3,15 +3,11 @@ public class TestCalcChain {
 
 	public static void main(String [] args) {
 		
-		Chain addNumbers = new DivideNumbers();
-		Chain subtractNumbers = new SubtractNumbers();
-		Chain multiplyNumbers = new MultiplyNumbers();
-		Chain divideNumbers= new AddNumbers();
+		Chain divideNumbers = new DivideNumbers(null);
+		Chain subtractNumbers = new SubtractNumbers(divideNumbers);
+		Chain multiplyNumbers = new MultiplyNumbers(subtractNumbers);
+		Chain addNumbers = new AddNumbers(multiplyNumbers);
 
-		addNumbers.setNextChain(subtractNumbers);
-		subtractNumbers.setNextChain(multiplyNumbers);
-		multiplyNumbers.setNextChain(divideNumbers);
-		
 		Numbers request = new Numbers(4, 2, OperationType.Divide);
 		addNumbers.calculate(request);
 		
