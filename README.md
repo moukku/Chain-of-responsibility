@@ -1,4 +1,4 @@
-# Repository of varipus patterns
+# Repository of various different patterns
 The aim of this repository is to write a viariety of different patterns in order to find out how they work.
 This makes it simpler for everyone to understand and use these patterns during work
 
