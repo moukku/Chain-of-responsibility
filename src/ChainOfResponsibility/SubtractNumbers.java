@@ -1,16 +1,16 @@
 
-public class SubtractNumbers extends AbstractNumberCommand implements Chain{
-	
+public class SubtractNumbers extends AbstractNumberCommand implements Chain {
+
 	public SubtractNumbers(Chain nextInChain) {
 		super(nextInChain);
 	}
-	
-	
+
+	@Override
 	public void calculate(Numbers request) {
-		if(OperationType.Subtract.equals(request.getCalculationWanted())){
-			System.out.println(request.getNumber1() + " - " + request.getNumber2() + " = " + (request.getNumber1()-request.getNumber2()));
-		}
-		else {
+		if (OperationType.Subtract.equals(request.getCalculationWanted())) {
+			System.out.println(request.getNumber1() + " - " + request.getNumber2() + " = "
+					+ (request.getNumber1() - request.getNumber2()));
+		} else {
 			getNextInChain().calculate(request);
 		}
 	}

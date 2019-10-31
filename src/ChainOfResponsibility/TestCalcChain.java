@@ -1,8 +1,8 @@
 
 public class TestCalcChain {
 
-	public static void main(String [] args) {
-		
+	public static void main(String[] args) {
+
 		Chain divideNumbers = new DivideNumbers(null);
 		Chain subtractNumbers = new SubtractNumbers(divideNumbers);
 		Chain multiplyNumbers = new MultiplyNumbers(subtractNumbers);
@@ -10,7 +10,7 @@ public class TestCalcChain {
 
 		Numbers request = new Numbers(4, 2, OperationType.Divide);
 		addNumbers.calculate(request);
-		
+
 	}
-	
+
 }

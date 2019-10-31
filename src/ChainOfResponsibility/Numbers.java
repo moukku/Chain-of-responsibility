@@ -22,5 +22,5 @@ public class Numbers {
 	public OperationType getCalculationWanted() {
 		return calculationWanted;
 	}
-	
+
 }

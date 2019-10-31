@@ -1,6 +1,6 @@
 
 public interface Chain {
-	
-	public void calculate(Numbers request);
+
+	void calculate(Numbers request);
 
 }
